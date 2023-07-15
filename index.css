@@ -1,0 +1,82 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Courier Prime', monospace;
+}
+
+body {
+   width: 100%;
+   background: rgb(197,223,255);
+   background: linear-gradient(90deg, rgba(150,197,255,1) 0%, rgba(0,101,220,1) 100%);
+}
+
+#todo-list-body {
+   width: 100%;
+   max-width: 50%;
+   height: 600px;
+   margin: 75px auto;
+   padding: 25px;
+   background-color: #fff;
+   -webkit-box-shadow: -5px 5px 0px 2px #DEDEDE, -15px 15px 0px 0px #CCCCCC; 
+   box-shadow: -5px 5px 0px 2px #DEDEDE, -15px 15px 0px 0px #CCCCCC;
+}
+
+h1 {
+   width: fit-content;
+   font-size: 35px;
+}
+
+form {
+   height: 65px;
+   margin: 15px;
+}
+
+form input {
+   width: 250px;
+   padding: 5px;
+   margin: 10px;
+   border: none;
+   border-bottom: 2px solid #DEDEDE;
+}
+
+form input::placeholder {
+   font-size: 16px;
+   font-style: italic;
+}
+
+textarea:focus, input:focus {
+   box-shadow: 0 0 0 0;
+   outline: 0;
+}
+
+.btn-add-task {
+   background-color: transparent;
+   border: none;
+   font-size: 25px;
+   cursor: pointer;
+}
+
+.container-tasks {
+   width: 100%;
+   max-width: 85%;
+   margin: 0 auto;
+}
+
+.container-tasks ul {
+   list-style: none;
+}
+
+.container-tasks ul li {
+   width: 100%;
+   padding: 8px 5px 2px 5px;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 2px solid #DEDEDE;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.completed-tasks {
+   text-decoration: line-through;
+}
